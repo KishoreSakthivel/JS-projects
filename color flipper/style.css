@@ -1,0 +1,180 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  color: white;
+}
+nav {
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 34);
+}
+nav .head {
+  color: rgb(0, 134, 196);
+  margin: 0px 50px;
+}
+nav .menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 100px;
+}
+.menu-bar li,
+div {
+  margin: 0px 20px;
+}
+.menu-bar li a {
+  height: 100%;
+  display: block;
+  padding: 15px;
+}
+a.active {
+  color: rgb(0, 134, 196);
+}
+ul li a:hover {
+  background-color: rgb(0, 134, 196);
+  color: black;
+}
+.bar {
+  width: 35px;
+  height: 20px;
+}
+.bar .mbar {
+  display: none;
+  width: 100%;
+  position: relative;
+  top: -0.2rem;
+  height: 5px;
+  margin: 4px 0px;
+  border-radius: 9px;
+  background-color: rgb(0, 134, 196);
+}
+.side-bar {
+  display: none;
+  margin: 0px;
+  position: absolute;
+  top: 8vh;
+  right: 0px;
+  height: 92vh;
+  width: 40%;
+  background-color: rgb(34, 34, 34);
+  transform: translateX(235px);
+}
+.side-bar li {
+  height: 100%;
+}
+.side-bar li a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+.git {
+  padding: 10px 5px;
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-size: 15px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+.git a {
+  font-size: 20px;
+  margin-right: 0px;
+}
+i {
+  margin: 0px 5px;
+}
+.git:hover {
+  background-color: rgb(0, 134, 196);
+  cursor: pointer;
+}
+.content {
+  padding: 25px;
+  margin: auto;
+  margin-top: 200px;
+  text-align: center;
+  display: block;
+  width: 440px;
+  height: fit-content;
+}
+.content h1 {
+  font-size: 25px;
+  margin: 5px 0px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 25px;
+}
+.color {
+  font-size: 25px;
+}
+.content .btn {
+  font-size: 25px;
+  margin: 10px;
+  padding: 6px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 25px;
+  cursor: pointer;
+}
+.git1 {
+  min-height: 7vh;
+  margin: 0px;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(34, 34, 34);
+  display: block;
+  width: 100vw;
+}
+.git1 a {
+  position: relative;
+  left: 45vw;
+  top: 5px;
+}
+.git1 a:hover {
+  color: rgb(0, 134, 196);
+}
+@media screen and (max-width: 800px) {
+  .bar .mbar {
+    display: block;
+    position: relative;
+    right: -20px;
+  }
+  .links {
+    display: none;
+  }
+  .head {
+    font-size: 25px;
+  }
+  .hover {
+    display: inline;
+    transform: translateX(0px);
+  }
+  .git1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content h1,
+  .color,
+  .btn,
+  .head {
+    font-size: 17px;
+  }
+  .bar {
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .content {
+    width: 300px;
+  }
+  nav {
+    align-items: space-around;
+  }
+}
